@@ -31,3 +31,8 @@ html[data-theme=light] .primary:hover{background:#625027;color:#fff}
 html[data-theme=light] .skip{color:#fff}
 html[data-theme=light] ::selection{background:#75602f;color:#fff}
 }
+
+/* Original supplied portrait; favicon remains MZ. */
+.portrait-panel{min-height:0;gap:22px;padding:24px}
+.portrait{display:block;width:100%;height:auto;aspect-ratio:2032/2047;object-fit:contain;border-radius:2px;background:#fff}
+@media(max-width:650px){.portrait-panel{max-width:380px;width:100%;margin-inline:auto;padding:18px;gap:16px}}

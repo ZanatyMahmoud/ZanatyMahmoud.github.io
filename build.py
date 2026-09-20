@@ -48,7 +48,7 @@ for lang, c in content.items():
 <h1 id="hero-title">{name}</h1><p class="role">{e(c['title'])}</p><p class="direction">{e(c['direction'])}</p><p class="hero-summary">{e(c['summary'])}</p>
 <div class="actions"><a class="button primary" href="#experience">{e(c['experienceCta'])}<span aria-hidden="true">↙</span></a><a class="button secondary" href="#contact">{e(c['contactCta'])}</a></div>
 <p class="location"><span aria-hidden="true">⌖</span> {e(c['location'])}</p></div>
-<div class="identity-panel"><div class="panel-top"><span dir="ltr">M / Z</span><span>{e(c['heroLabel'])}</span></div><div class="monogram" aria-hidden="true">M<span>Z</span><i>.</i></div><div class="panel-bottom"><p>{e(c['monogramCaption'])}</p><span>{e(c['monogramSmall'])}</span></div></div>
+<div class="identity-panel portrait-panel"><div class="panel-top"><span dir="ltr">M / Z</span><span>{e(c['heroLabel'])}</span></div><img class="portrait" src="./assets/portrait.svg" width="2032" height="2047" alt="{e(c['name'])}" fetchpriority="high" decoding="async"><div class="panel-bottom"><p>{e(c['monogramCaption'])}</p><span>{e(c['monogramSmall'])}</span></div></div>
 </section>
 <section id="about" class="section container">
 {heading('01',c['nav'][0],c['aboutTitle'])}<div class="about-grid"><p class="lead">{e(c['about'])}</p><aside class="focus-panel"><p class="eyebrow">{e(c['focusLabel'])}</p><h3>{e(c['focus'])}</h3><p>{e(c['focusText'])}</p></aside></div>
