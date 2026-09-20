@@ -2,6 +2,10 @@
 
 موقع شخصي ثابت بالعربية والإنجليزية، مخصص للمحاسبة والمالية. لا يحتاج إلى تثبيت حزم أو قاعدة بيانات أو مفاتيح API.
 
+الموقع المنشور والمتحقق منه: https://zanatymahmoud.github.io/
+
+المستودع: https://github.com/ZanatyMahmoud/ZanatyMahmoud.github.io
+
 ## التشغيل
 
 افتح `index.html` للعربية أو `en.html` للإنجليزية. للتجربة عبر HTTP، من مجلد الموقع:
@@ -23,6 +27,7 @@ python3 -m http.server 8000
 - `.nojekyll`: نشر الملفات الثابتة دون معالجة Jekyll.
 - `DESIGN-NOTES.md`: مقارنة الخيارات وملاحظات المرجع.
 - `TEST-REPORT.md`: الفحوص المنفذة والقيود الفعلية.
+- `tools/preview.html`: أداة مراجعة تخطيط عند 360 و390 و768 و1440 بكسل، مع وضع لتعطيل JavaScript داخل إطار المعاينة؛ غير مرتبطة بتنقل الزوار وتحمل noindex.
 
 ## تعديل المحتوى
 
@@ -78,7 +83,7 @@ python3 build.py
 4. من Settings → Pages → Build and deployment اختر Deploy from a branch، ثم `main` و`/(root)` واضغط Save.
 5. انتظر نجاح تشغيل Pages في Actions. افتح الرابط الذي تعرضه صفحة Pages ثم تحقق من اللغة والتنقل والأصول على الموقع المنشور.
 
-لا يوجد نشر تلقائي مؤكد في هذه الحزمة. تحقق من `TEST-REPORT.md` لمعرفة حالة التسليم. لا يوجد CNAME أو canonical أو og:url لأن عنوان النشر لا يُفترض قبل التحقق منه. لا توجد صورة Open Graph وهمية؛ يمكن إضافة صورة مرخصة لاحقًا مع عنوانها النهائي الكامل.
+تم النشر والتحقق من الموقع عبر GitHub Pages من فرع `main` ومجلد الجذر. تؤدي التحديثات على هذا الفرع إلى نشر نسخة جديدة؛ انتظر اكتمال Pages قبل فحص التحديث. تحقق من `TEST-REPORT.md` لمعرفة الاختبارات والقيود. لا يوجد CNAME أو ربط إجباري بعنوان نطاق، للحفاظ على قابلية نقل الموقع إلى مسار آخر. لا توجد صورة Open Graph وهمية؛ يمكن إضافة صورة مرخصة لاحقًا مع عنوانها النهائي الكامل.
 
 مرجع GitHub الرسمي: https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site
 
