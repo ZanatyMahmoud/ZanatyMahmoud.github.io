@@ -43,9 +43,6 @@
   document.addEventListener('click', event => {
     if (menu.open && !menu.contains(event.target)) menu.open = false;
   });
-  const printButton = document.querySelector('.print-button');
-  printButton.hidden = false;
-  printButton.addEventListener('click', () => window.print());
   let priorDetails = [];
   window.addEventListener('beforeprint', () => {
     priorDetails = [...document.querySelectorAll('.project-details')].map(el => [el, el.open]);

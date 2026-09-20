@@ -1,9 +1,16 @@
 """Regenerate both static language pages using Python 3 standard library."""
 import json
+import base64
 from pathlib import Path
 from html import escape
 ROOT = Path(__file__).resolve().parent
 content = json.loads((ROOT / 'content.json').read_text(encoding='utf-8'))
+# PDFs are stored losslessly as Base64 source for text-only repository transfers.
+cv_dir = ROOT / 'assets' / 'cv'
+cv_dir.mkdir(parents=True, exist_ok=True)
+for cv_lang in ('ar', 'en'):
+    encoded = (ROOT / 'cv-source' / f'{cv_lang}.pdf.b64').read_text().strip()
+    (cv_dir / f'Mahmoud-El-Zanaty-CV-{cv_lang.upper()}.pdf').write_bytes(base64.b64decode(encoded, validate=True))
 ids = ['about', 'experience', 'skills', 'project', 'education', 'contact']
 def e(value):
     return escape(str(value))
@@ -62,7 +69,7 @@ for lang, c in content.items():
 <section id="skills" class="section container">{heading('03',c['nav'][2],c['skillsTitle'])}<div class="skills-grid">{skills}</div></section>
 <section id="project" class="section container">{heading('04',c['nav'][3],c['projectTitle'])}<article class="project-card"><div class="project-index" aria-hidden="true">01<span>2024</span></div><div class="project-copy"><p class="eyebrow">{e(c['projectLabel'])}</p><h3>{lines(c['projectName'])}</h3><p>{e(c['projectText'])}</p><details class="project-details"><summary>{e(c['projectMore'])}</summary><p>{e(c['projectDetail'])}</p></details></div></article></section>
 <section id="education" class="section section-tinted"><div class="container">{heading('05',c['nav'][4],c['educationTitle'])}<div class="education-grid"><div><article class="degree"><p class="eyebrow"><bdi>2020–2024</bdi></p><h3>{e(c['degree'])}</h3><p>{e(c['school'])}</p><p class="grade">{e(c['grade'])}</p><p>{e(c['finalGrade'])}</p></article><div class="languages"><h3>{e(c['languagesLabel'])}</h3><ul>{languages}</ul></div></div><div class="courses"><h3>{e(c['coursesLabel'])}</h3><ul>{courses}</ul></div></div></div></section>
-<section id="contact" class="section container contact">{heading('06',c['nav'][5],c['contactTitle'])}<p>{e(c['contactText'])}</p><a class="email-link" href="mailto:acc.m.zanaty@gmail.com" aria-label="{e(c['emailLabel'])}: acc.m.zanaty@gmail.com"><bdi>acc.m.zanaty@gmail.com</bdi><span aria-hidden="true">↗</span></a><div class="contact-bottom"><p>{e(c['location'])}</p><button class="button secondary print-button" hidden>{e(c['print'])}<span aria-hidden="true">↓</span></button></div><noscript><p>{e(c['noJs'])}</p></noscript></section>
+<section id="contact" class="section container contact">{heading('06',c['nav'][5],c['contactTitle'])}<p>{e(c['contactText'])}</p><a class="email-link" href="mailto:acc.m.zanaty@gmail.com" aria-label="{e(c['emailLabel'])}: acc.m.zanaty@gmail.com"><bdi>acc.m.zanaty@gmail.com</bdi><span aria-hidden="true">↗</span></a><div class="contact-bottom"><p>{e(c['location'])}</p><a class="button secondary print-button" href="./assets/cv/Mahmoud-El-Zanaty-CV-{lang.upper()}.pdf" download="Mahmoud-El-Zanaty-CV-{lang.upper()}.pdf">{'تحميل السيرة الذاتية PDF' if lang == 'ar' else 'Download CV (PDF)'}<span aria-hidden="true">↓</span></a></div></section>
 </main><footer class="container footer"><p>{e(c['footer'])}</p><a href="#top">{e(c['backTop'])} ↑</a></footer>
 </body></html>'''
     (ROOT / ('index.html' if lang == 'ar' else 'en.html')).write_text(html, encoding='utf-8')
