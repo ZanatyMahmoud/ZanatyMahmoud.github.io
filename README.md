@@ -59,7 +59,7 @@ python3 build.py
 
 ## إضافة صورة شخصية
 
-ضع صورة مصرحًا بنشرها داخل `assets/portrait.webp`. استبدل عنصر `.identity-panel` في `build.py` بعنصر صورة له وصف مناسب في كل لغة، وحدد `width` و`height` وأضف CSS بـ`max-width:100%;height:auto`. ثم شغّل `python3 build.py`. لا توجد صورة شخصية افتراضية؛ علامة MZ مجرد أحرف اسم.
+ضع الصورة داخل `assets/portrait.webp`. استبدل عنصر `.identity-panel` في `build.py` بعنصر صورة له وصف مناسب في كل لغة، وحدد `width` و`height` وأضف CSS بـ`max-width:100%;height:auto`. ثم شغّل `python3 build.py`. لا توجد صورة شخصية افتراضية؛ علامة MZ مجرد أحرف اسم.
 
 ## اللغة وإمكانية الوصول
 
