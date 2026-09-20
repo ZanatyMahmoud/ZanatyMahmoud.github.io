@@ -2,6 +2,22 @@
 (() => {
   const root = document.documentElement;
   const language = root.lang;
+  const themeButton = document.querySelector('.theme-toggle');
+  const updateTheme = theme => {
+    root.dataset.theme = theme;
+    const light = theme === 'light';
+    const label = light ? themeButton.dataset.darkLabel : themeButton.dataset.lightLabel;
+    themeButton.setAttribute('aria-label', label);
+    themeButton.title = label;
+    document.querySelector('meta[name="theme-color"]').content = light ? '#e3e6e1' : '#161918';
+  };
+  updateTheme(root.dataset.theme === 'light' ? 'light' : 'dark');
+  themeButton.hidden = false;
+  themeButton.addEventListener('click', () => {
+    const theme = root.dataset.theme === 'light' ? 'dark' : 'light';
+    updateTheme(theme);
+    try { localStorage.setItem('mz-theme', theme); } catch (_) {}
+  });
   const switchLink = document.querySelector('[data-language]');
   // Explicit language links stay usable even when storage or JavaScript is unavailable.
   switchLink.addEventListener('click', () => {

@@ -32,14 +32,14 @@ for lang, c in content.items():
 <meta property="og:description" content="{e(c['description'])}"><meta property="og:locale" content="{'ar_SA' if lang == 'ar' else 'en_US'}">
 <link rel="alternate" hreflang="ar" href="./index.html"><link rel="alternate" hreflang="en" href="./en.html"><link rel="alternate" hreflang="x-default" href="./index.html">
 <link rel="icon" href="./assets/favicon.svg" type="image/svg+xml">
-<link rel="stylesheet" href="./assets/style.css"><script src="./assets/app.js" defer></script>
+<script src="./assets/theme.js"></script>\n<link rel="stylesheet" href="./assets/style.css"><script src="./assets/app.js" defer></script>
 </head>
 <body id="top">
 <a class="skip" href="#main">{e(c['skip'])}</a>
 <header class="header"><div class="header-inner">
 <a class="brand" href="#top" aria-label="{e(c['name'])}"><span class="brand-mark" aria-hidden="true">MZ<span>.</span></span></a>
 <nav class="desktop-nav" aria-label="{e(c['navigation'])}">{nav}</nav>
-<div class="header-actions"><a class="language" href="./{other}" lang="{otherlang}" hreflang="{otherlang}" data-language="{otherlang}">{toggle}</a>
+<div class="header-actions"><button class="theme-toggle" type="button" hidden data-light-label="{'تفعيل الوضع الفاتح' if lang == 'ar' else 'Switch to light mode'}" data-dark-label="{'تفعيل الوضع الداكن' if lang == 'ar' else 'Switch to dark mode'}" aria-label="{'تفعيل الوضع الفاتح' if lang == 'ar' else 'Switch to light mode'}"><svg class="sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M2 12h2m16 0h2M5 5l1.5 1.5m11 11L19 19M5 19l1.5-1.5m11-11L19 5"/></svg><svg class="moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M20 15.5A9 9 0 0 1 8.5 4a9 9 0 1 0 11.5 11.5Z"/></svg></button><a class="language" href="./{other}" lang="{otherlang}" hreflang="{otherlang}" data-language="{otherlang}">{toggle}</a>
 <details class="mobile-menu"><summary>{e(c['menu'])}<span aria-hidden="true"> ☰</span></summary><nav aria-label="{e(c['navigation'])}">{nav}</nav></details></div>
 </div></header>
 <main id="main" tabindex="-1">
