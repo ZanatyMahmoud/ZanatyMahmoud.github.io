@@ -2,7 +2,7 @@
 
 موقع شخصي ثابت بالعربية والإنجليزية، مخصص للمحاسبة والمالية. لا يحتاج إلى تثبيت حزم أو قاعدة بيانات أو مفاتيح API.
 
-الموقع المنشور والمتحقق منه: https://zanatymahmoud.github.io/
+الموقع المنشور: https://zanatymahmoud.github.io/
 
 المستودع: https://github.com/ZanatyMahmoud/ZanatyMahmoud.github.io
 
@@ -55,13 +55,9 @@ python3 build.py
 
 أعد اختبار التباين بعد التعديل. الموقع يستخدم خطوط النظام؛ لا تُحمّل خطوط أو مكتبات أو تحليلات خارجية. قد يختلف شكل الخط قليلًا بين الأجهزة.
 
-## إضافة صورة شخصية لاحقًا
+## إضافة صورة شخصية
 
 ضع صورة مصرحًا بنشرها داخل `assets/portrait.webp`. استبدل عنصر `.identity-panel` في `build.py` بعنصر صورة له وصف مناسب في كل لغة، وحدد `width` و`height` وأضف CSS بـ`max-width:100%;height:auto`. ثم شغّل `python3 build.py`. لا توجد صورة شخصية افتراضية؛ علامة MZ مجرد أحرف اسم.
-
-## التواصل والروابط
-
-البريد المستخدم هو `acc.m.zanaty@gmail.com`. لتغييره، عدّل رابط `mailto` والنص و`aria-label` في `build.py` ثم أعد التوليد. لا يوجد نموذج تواصل أو إرسال بيانات إلى خدمة خارجية. أضف LinkedIn فقط عند توفر رابط صحيح يوافق عليه صاحب الملف. حافظ على الروابط الداخلية والمسارات النسبية `./` لتعمل تحت نطاق المستخدم أو مجلد مستودع فرعي.
 
 ## اللغة وإمكانية الوصول
 
@@ -75,22 +71,3 @@ python3 build.py
 
 زر «طباعة الملف المهني» يفتح طباعة المتصفح؛ لا ينزل سيرة ذاتية مستقلة. اختر A4 واحفظ PDF إن رغبت. CSS للطباعة يزيل الترويسة والزخارف والأزرار، ويستخدم خلفية بيضاء. مع JavaScript تفتح تفاصيل المشروع قبل الطباعة ثم تستعاد حالتها؛ دون JavaScript يعمل أمر الطباعة من المتصفح. عند اختلاف دعم طباعة `details` افتح «عن المشروع» قبل الطباعة. راجع المعاينة قبل استخدام PDF مهنيًا.
 
-## النشر على GitHub Pages
-
-1. تحقق أن الحساب هو `ZanatyMahmoud` وأن المستودع `ZanatyMahmoud.github.io` غير موجود. إن كان موجودًا، افحص محتواه قبل أي تعديل؛ لا تستبدل موقعًا قائمًا دون موافقة.
-2. أنشئ المستودع بالاسم المذكور وبحالة Public إذا كنت تستخدم GitHub Free.
-3. ارفع **محتويات المجلد** إلى جذر فرع `main`؛ يجب أن يكون `index.html` في الجذر، وليس داخل مجلد إضافي، ولا ترفع ZIP وحده.
-4. من Settings → Pages → Build and deployment اختر Deploy from a branch، ثم `main` و`/(root)` واضغط Save.
-5. انتظر نجاح تشغيل Pages في Actions. افتح الرابط الذي تعرضه صفحة Pages ثم تحقق من اللغة والتنقل والأصول على الموقع المنشور.
-
-تم النشر والتحقق من الموقع عبر GitHub Pages من فرع `main` ومجلد الجذر. تؤدي التحديثات على هذا الفرع إلى نشر نسخة جديدة؛ انتظر اكتمال Pages قبل فحص التحديث. تحقق من `TEST-REPORT.md` لمعرفة الاختبارات والقيود. لا يوجد CNAME أو ربط إجباري بعنوان نطاق، للحفاظ على قابلية نقل الموقع إلى مسار آخر. لا توجد صورة Open Graph وهمية؛ يمكن إضافة صورة مرخصة لاحقًا مع عنوانها النهائي الكامل.
-
-مرجع GitHub الرسمي: https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site
-
-## الخصوصية والصيانة
-
-استخدم المسميات العامة لجهات العمل فقط. لا تضف أسماء أصحاب العمل أو الهاتف أو الراتب أو الهوية أو عنوان السكن إلى أي ملف أو تعليق أو commit. لا تنشر ملف سيرة مصدر دون فحص محتواه وبياناته المخفية والحصول على تصريح نشره. البريد المهني والمدينة هما بيانات التواصل المنشورة. لا تُضمّن مفاتيح أو رموز وصول. لا تحتاج هذه النسخة إلى أي اعتماديات أو متتبعات. راجع جميع الملفات قبل رفعها إلى مستودع عام.
-
-## Rights and third-party assets
-
-This is an original implementation. No template code, third-party images, testimonials or downloadable fonts are bundled. The MZ favicon is original SVG text. System fonts are referenced by name only and are not redistributed. Template references in DESIGN-NOTES.md are comparison sources only. No blanket open-source license is imposed on the owner's personal content.
