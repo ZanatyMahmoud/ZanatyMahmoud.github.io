@@ -1,4 +1,4 @@
-# Mahmoud Ahmed El Zanaty — professional portfolio
+# Mahmoud Ahmed El Zanaty — portfolio
 
 موقع شخصي ثابت بالعربية والإنجليزية، مخصص للمحاسبة والمالية. لا يحتاج إلى تثبيت حزم أو قاعدة بيانات أو مفاتيح API.
 
