@@ -6,7 +6,14 @@
     "direction": " ",
     "location": "الرياض، المملكة العربية السعودية",
     "description": "الملف المهني لمحمود أحمد الزناتي.",
-    "nav": ["نبذة", "الخبرة", "المهارات", "مشاريع", "التعليم", "التواصل"],
+    "nav": [
+      "نبذة",
+      "الخبرة",
+      "المهارات",
+      "مشاريع",
+      "التعليم",
+      "التواصل"
+    ],
     "heroLabel": "المحاسبة والمالية",
     "hello": "مرحبًا، أنا",
     "summary": "أعمل في المحاسبة بقطاع المقاولات، بخبرة تشمل التسويات ومطابقة الحسابات وإعداد التقارير ومتطلبات الالتزام. وأواصل تطوير معرفتي بالتحليل المالي ومراقبة التكاليف.",
@@ -36,22 +43,67 @@
     "dutiesTitle": "مهام من خبرتي العملية",
     "dutiesNote": "تعكس المهام التالية نطاق خبرتي العملية عبر مساري، ولا تُنسب جميعها إلى جهة العمل الحالية.",
     "duties": [
-      {"title":"التسويات والحسابات", "items":["إجراء التسويات البنكية اليومية والشهرية وتحديد الفروق وتسجيل التسويات.","تحليل معاملات الحسابات البنكية وتصنيفها وتسجيل القيود.","مطابقة حسابات العهد والموردين والبنوك والعملاء.","إنشاء وإضافة حسابات جديدة في دليل الحسابات."]},
-      {"title":"التقارير والالتزام", "items":["تحليل مسيرات الرواتب وإعداد تقارير المحتوى المحلي المتعلقة بها.","إعداد إقرارات ضريبة القيمة المضافة والمستندات المؤيدة.","تجهيز كشوف الحسابات وصور الفواتير للمراجع الخارجي والفحص الضريبي.","إعداد تقارير الالتزام بالمحتوى المحلي والقوائم الإلزامية للمشتريات من السلع والخدمات.","إعداد تقارير دلالة المنشأ."]},
-      {"title":"المعالجة المحاسبية", "items":["معالجة إهلاك الأصول الثابتة.","إعداد مخصصات منافع الموظفين السنوية.","تسوية الإيرادات والمصروفات المقدمة والمستحقة."]}
+      {
+        "title": "التسويات والحسابات",
+        "items": [
+          "إجراء التسويات البنكية اليومية والشهرية وتحديد الفروق وتسجيل التسويات.",
+          "تحليل معاملات الحسابات البنكية وتصنيفها وتسجيل القيود.",
+          "مطابقة حسابات العهد والموردين والبنوك والعملاء.",
+          "إنشاء وإضافة حسابات جديدة في دليل الحسابات."
+        ]
+      },
+      {
+        "title": "التقارير والالتزام",
+        "items": [
+          "تحليل مسيرات الرواتب وإعداد تقارير المحتوى المحلي المتعلقة بها.",
+          "إعداد إقرارات ضريبة القيمة المضافة والمستندات المؤيدة.",
+          "تجهيز كشوف الحسابات وصور الفواتير للمراجع الخارجي والفحص الضريبي.",
+          "إعداد تقارير الالتزام بالمحتوى المحلي والقوائم الإلزامية للمشتريات من السلع والخدمات.",
+          "إعداد تقارير دلالة المنشأ."
+        ]
+      },
+      {
+        "title": "المعالجة المحاسبية",
+        "items": [
+          "معالجة إهلاك الأصول الثابتة.",
+          "إعداد مخصصات منافع الموظفين السنوية.",
+          "تسوية الإيرادات والمصروفات المقدمة والمستحقة."
+        ]
+      }
     ],
     "skillsTitle": "المهارات",
     "skills": [
-      {"title":"الحسابات والمراجعة", "items":["التسويات ومطابقة الحسابات","التقارير المالية","إجراءات المراجعة والتدقيق"]},
-      {"title":"الأدوات", "items":["Microsoft Excel","Microsoft Office","أنظمة ERP"]},
-      {"title":"التحليل", "items":["التحليل المالي","المهارات التحليلية","المهارات البحثية"]}
+      {
+        "title": "الحسابات والمراجعة",
+        "items": [
+          "التسويات ومطابقة الحسابات",
+          "التقارير المالية",
+          "إجراءات المراجعة والتدقيق"
+        ]
+      },
+      {
+        "title": "الأدوات",
+        "items": [
+          "Microsoft Excel",
+          "Microsoft Office",
+          "أنظمة ERP"
+        ]
+      },
+      {
+        "title": "التحليل",
+        "items": [
+          "التحليل المالي",
+          "المهارات التحليلية",
+          "المهارات البحثية"
+        ]
+      }
     ],
     "projectTitle": "المشاريع",
     "projectLabel": "مشروع التخرج · مشروع أكاديمي",
     "projectName": "دراسة جدوى مصنع\nلألواح الطاقة الشمسية",
-    "projectText": "دراسة جدوى إنشاء مصنع لإنتاج وحدات ألواح الطاقة الشمسية، ضمن مشروع التخرج في تخصص المحاسبة.",
-    "projectMore": "عن المشروع",
-    "projectDetail": "مشروع أكاديمي لدراسة فكرة استثمارية في مجال الطاقة الشمسية، وليس مصنعًا تم تنفيذه أو تشغيله. مثّل فرصة لربط الدراسة المحاسبية بموضوع دراسة الجدوى والتحليل المالي.",
+    "projectText": "دراسة جدوى أكاديمية لإنشاء مصنع لتجميع وحدات ألواح الطاقة الشمسية في مصر، تربط متطلبات التشغيل بالتكاليف والتقديرات المالية.",
+    "projectMore": "نطاق عملي في المشروع",
+    "projectDetail": "أعددت الدراسات القانونية والبيئية والفنية والمالية والاقتصادية بالكامل بنفسي. الدراسة التسويقية ليست ضمن مساهمتي. شمل عملي تحديد احتياجات التشغيل، وتقدير التكاليف الاستثمارية والتشغيلية، وإعداد جداول الإهلاك والتقديرات المالية ودراسة مؤشرات الجدوى. المشروع أكاديمي، ولم أنشئ المصنع أو أتولى تشغيله.",
     "educationTitle": "التعليم",
     "degree": "بكالوريوس تجارة — محاسبة",
     "school": "معهد العبور العالي للإدارة والحاسبات ونظم المعلومات — مصر",
@@ -59,20 +111,65 @@
     "finalGrade": "تقدير السنة النهائية: ممتاز",
     "coursesLabel": "الدورات التدريبية",
     "courses": [
-      ["Cost Control","Benaa Academy","2025"],
-      ["دبلوم التحليل المالي","eYouth","2025"],
-      ["المحاسبة والتدقيق المتقدم","eYouth","2025"],
-      ["تحليل البيانات","Machinfy","2024"],
-      ["Excel","إدراك","2024"]
+      [
+        "Cost Control",
+        "Benaa Academy",
+        "2025"
+      ],
+      [
+        "دبلوم التحليل المالي",
+        "eYouth",
+        "2025"
+      ],
+      [
+        "المحاسبة والتدقيق المتقدم",
+        "eYouth",
+        "2025"
+      ],
+      [
+        "تحليل البيانات",
+        "Machinfy",
+        "2024"
+      ],
+      [
+        "Excel",
+        "إدراك",
+        "2024"
+      ]
     ],
     "languagesLabel": "اللغات",
-    "languages": ["العربية — اللغة الأم","الإنجليزية — متوسط"],
+    "languages": [
+      "العربية — اللغة الأم",
+      "الإنجليزية — متوسط"
+    ],
     "contactTitle": "للتواصل.",
     "contactText": "للتواصل بشأن الفرص المهنية في المحاسبة والمالية، يسعدني تلقي رسالتك عبر البريد الإلكتروني.",
     "emailLabel": "راسلني عبر البريد",
     "footer": "محمود أحمد الزناتي · الملف المهني",
     "backTop": "العودة للأعلى",
-    "noJs": "المحتوى والتنقل وتبديل اللغة تعمل دون JavaScript. لطباعة الملف استخدم أمر الطباعة في المتصفح."
+    "noJs": "المحتوى والتنقل وتبديل اللغة تعمل دون JavaScript. لطباعة الملف استخدم أمر الطباعة في المتصفح.",
+    "projectEvidence": {
+      "title": "مقتطفات من الدراسة",
+      "note": "مقتطفات أصلية باللغة العربية من مشروع التخرج (2024). الأرقام افتراضات وتقديرات أكاديمية بالجنيه المصري، وليست نتائج تشغيل فعلية أو أسعارًا حالية. اضغط على المقتطف لعرضه بحجم أكبر.",
+      "items": [
+        {
+          "title": "هيكل التكاليف الاستثمارية",
+          "caption": "تجميع تكلفة الآلات والمعدات والأصول الأخرى ومصروفات التأسيس. صفحة 56 في الدراسة؛ صفحة 54 في الملف المرفق.",
+          "file": "investment-costs",
+          "alt": "جدول أصلي يلخص التكاليف الاستثمارية المقدرة للمشروع الأكاديمي",
+          "width": 880,
+          "height": 350
+        },
+        {
+          "title": "جدول إهلاك الأصول",
+          "caption": "مقتطف يربط تكلفة الأصل بعمره الإنتاجي وقيمته التخريدية والإهلاك. صفحة 61 في الدراسة؛ صفحة 59 في الملف المرفق.",
+          "file": "asset-depreciation",
+          "alt": "مقتطف أصلي من جدول الإهلاك المحاسبي للأصول في دراسة الجدوى",
+          "width": 1000,
+          "height": 571
+        }
+      ]
+    }
   },
   "en": {
     "name": "Mahmoud Ahmed El Zanaty",
@@ -81,7 +178,14 @@
     "direction": "Financial Analysis & Cost Control",
     "location": "Riyadh, Saudi Arabia",
     "description": "Professional profile of Mahmoud Ahmed El Zanaty, a construction-sector accountant in Riyadh with experience in reconciliations, reporting and compliance, and an interest in financial analysis and cost control.",
-    "nav": ["About", "Experience", "Skills", "Project", "Education", "Contact"],
+    "nav": [
+      "About",
+      "Experience",
+      "Skills",
+      "Project",
+      "Education",
+      "Contact"
+    ],
     "heroLabel": "Accounting & Finance",
     "hello": "Hello, I’m",
     "summary": "I work in construction accounting, with experience spanning reconciliations, account matching, reporting and compliance requirements. I am continuing to develop my knowledge of financial analysis and cost control.",
@@ -111,22 +215,67 @@
     "dutiesTitle": "Responsibilities across my experience",
     "dutiesNote": "These responsibilities reflect my professional experience across roles; they are not all attributed to my current employer.",
     "duties": [
-      {"title":"Reconciliations & accounts", "items":["Performed daily and monthly bank reconciliations, identified differences and recorded adjustments.","Analysed and classified bank transactions and recorded journal entries.","Reconciled petty cash and employee advance, supplier, bank and customer accounts.","Created and added accounts to the chart of accounts."]},
-      {"title":"Reporting & compliance", "items":["Analysed payroll and prepared related local content reports.","Prepared VAT returns and supporting documentation.","Compiled account statements and invoice copies for external audits and tax examinations.","Prepared local content compliance reports and mandatory procurement lists for goods and services.","Prepared reports on evidence of origin."]},
-      {"title":"Accounting adjustments", "items":["Processed fixed asset depreciation.","Prepared annual employee benefit provisions.","Adjusted prepaid and accrued income and expenses."]}
+      {
+        "title": "Reconciliations & accounts",
+        "items": [
+          "Performed daily and monthly bank reconciliations, identified differences and recorded adjustments.",
+          "Analysed and classified bank transactions and recorded journal entries.",
+          "Reconciled petty cash and employee advance, supplier, bank and customer accounts.",
+          "Created and added accounts to the chart of accounts."
+        ]
+      },
+      {
+        "title": "Reporting & compliance",
+        "items": [
+          "Analysed payroll and prepared related local content reports.",
+          "Prepared VAT returns and supporting documentation.",
+          "Compiled account statements and invoice copies for external audits and tax examinations.",
+          "Prepared local content compliance reports and mandatory procurement lists for goods and services.",
+          "Prepared reports on evidence of origin."
+        ]
+      },
+      {
+        "title": "Accounting adjustments",
+        "items": [
+          "Processed fixed asset depreciation.",
+          "Prepared annual employee benefit provisions.",
+          "Adjusted prepaid and accrued income and expenses."
+        ]
+      }
     ],
     "skillsTitle": "Skills behind the day-to-day work",
     "skills": [
-      {"title":"Accounting & audit", "items":["Reconciliations & account matching","Financial reporting","Audit & review procedures"]},
-      {"title":"Tools", "items":["Microsoft Excel","Microsoft Office","ERP systems"]},
-      {"title":"Analysis", "items":["Financial analysis","Analytical skills","Research skills"]}
+      {
+        "title": "Accounting & audit",
+        "items": [
+          "Reconciliations & account matching",
+          "Financial reporting",
+          "Audit & review procedures"
+        ]
+      },
+      {
+        "title": "Tools",
+        "items": [
+          "Microsoft Excel",
+          "Microsoft Office",
+          "ERP systems"
+        ]
+      },
+      {
+        "title": "Analysis",
+        "items": [
+          "Financial analysis",
+          "Analytical skills",
+          "Research skills"
+        ]
+      }
     ],
     "projectTitle": "Projects",
     "projectLabel": "Graduation project · Academic work",
     "projectName": "Feasibility study:\nsolar panel manufacturing",
-    "projectText": "A feasibility study for establishing a solar panel manufacturing plant, completed as an academic graduation project in Accounting.",
-    "projectMore": "About the project",
-    "projectDetail": "An academic study of an investment concept in solar energy, rather than a plant that was built or operated. It provided an opportunity to connect accounting studies with feasibility assessment and financial analysis.",
+    "projectText": "An academic feasibility study for a solar panel assembly plant in Egypt, linking operating requirements with costs and financial projections.",
+    "projectMore": "My contribution",
+    "projectDetail": "I independently prepared the legal, environmental, technical, financial and economic studies. The marketing study was not part of my contribution. My work covered operating requirements, capital and operating cost estimates, depreciation schedules, financial projections and feasibility indicators. This was an academic project; I did not build or operate the plant.",
     "educationTitle": "My Education",
     "degree": "Bachelor of Commerce — Accounting",
     "school": "Obour High Institute for Management, Computers and Information Systems — Egypt",
@@ -134,19 +283,64 @@
     "finalGrade": "Final-year grade: Excellent",
     "coursesLabel": "Training courses",
     "courses": [
-      ["Cost Control","Benaa Academy","2025"],
-      ["Financial Analysis Diploma","eYouth","2025"],
-      ["Advanced Accounting & Auditing","eYouth","2025"],
-      ["Data Analysis","Machinfy","2024"],
-      ["Excel","Edraak","2024"]
+      [
+        "Cost Control",
+        "Benaa Academy",
+        "2025"
+      ],
+      [
+        "Financial Analysis Diploma",
+        "eYouth",
+        "2025"
+      ],
+      [
+        "Advanced Accounting & Auditing",
+        "eYouth",
+        "2025"
+      ],
+      [
+        "Data Analysis",
+        "Machinfy",
+        "2024"
+      ],
+      [
+        "Excel",
+        "Edraak",
+        "2024"
+      ]
     ],
     "languagesLabel": "Languages",
-    "languages": ["Arabic — Native","English — Intermediate"],
+    "languages": [
+      "Arabic — Native",
+      "English — Intermediate"
+    ],
     "contactTitle": "Let’s start a professional conversation.",
     "contactText": "For professional opportunities in accounting and finance, please get in touch by email.",
     "emailLabel": "Email me",
     "footer": "Mahmoud Ahmed El Zanaty · Professional profile",
     "backTop": "Back to top",
-    "noJs": "Content, navigation and language switching work without JavaScript. Use your browser’s Print command to print this profile."
+    "noJs": "Content, navigation and language switching work without JavaScript. Use your browser’s Print command to print this profile.",
+    "projectEvidence": {
+      "title": "Selected study excerpts",
+      "note": "Original Arabic excerpts from the 2024 graduation project. Figures are academic assumptions and estimates in EGP, not actual operating results or current prices. Select an excerpt to view it at a larger size.",
+      "items": [
+        {
+          "title": "Capital cost structure",
+          "caption": "Equipment, other fixed assets and incorporation costs. Study page 56; page 54 in the supplied PDF.",
+          "file": "investment-costs",
+          "alt": "Original Arabic table of estimated capital costs for the academic project",
+          "width": 880,
+          "height": 350
+        },
+        {
+          "title": "Asset depreciation schedule",
+          "caption": "Selected rows linking asset cost, useful life, residual value and depreciation. Study page 61; page 59 in the supplied PDF.",
+          "file": "asset-depreciation",
+          "alt": "Original Arabic excerpt from the academic asset depreciation schedule",
+          "width": 1000,
+          "height": 571
+        }
+      ]
+    }
   }
 }

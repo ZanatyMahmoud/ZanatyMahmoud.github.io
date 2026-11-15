@@ -27,6 +27,11 @@ for lang, c in content.items():
     skills = ''.join(f'<article class="skill"><h3>{e(d["title"])}</h3><ul>'+''.join(f'<li>{e(v)}</li>' for v in d['items'])+'</ul></article>' for d in c['skills'])
     courses = ''.join(f'<li><div><h4>{e(t)}</h4><p>{e(p)}</p></div><time datetime="{y}">{y}</time></li>' for t,p,y in c['courses'])
     languages = ''.join(f'<li>{e(v)}</li>' for v in c['languages'])
+    evidence = c.get('projectEvidence')
+    evidence_html = ''
+    if evidence:
+        figures = ''.join(f'<figure class="project-excerpt"><h4>{e(item["title"])}</h4><a href="./assets/projects/{e(item["file"])}.svg" target="_blank" rel="noopener noreferrer"><img src="./assets/projects/{e(item["file"])}.svg" alt="{e(item["alt"])}" width="{item["width"]}" height="{item["height"]}" loading="lazy" decoding="async"></a><figcaption>{e(item["caption"])}</figcaption></figure>' for item in evidence['items'])
+        evidence_html = f'<div class="project-evidence"><h3>{e(evidence["title"])}</h3><p>{e(evidence["note"])}</p><div class="project-excerpts">{figures}</div></div>'
     name = 'محمود أحمد<br><span>الزناتي.</span>' if lang == 'ar' else 'Mahmoud Ahmed<br><span>El Zanaty.</span>'
     html = f'''<!doctype html>
 <html lang="{lang}" dir="{'rtl' if lang == 'ar' else 'ltr'}">
@@ -67,7 +72,7 @@ for lang, c in content.items():
 </div><div class="duties-intro"><h3>{e(c['dutiesTitle'])}</h3><p>{e(c['dutiesNote'])}</p></div><div class="duties-grid">{duties}</div></div>
 </section>
 <section id="skills" class="section container">{heading('03',c['nav'][2],c['skillsTitle'])}<div class="skills-grid">{skills}</div></section>
-<section id="project" class="section container">{heading('04',c['nav'][3],c['projectTitle'])}<article class="project-card"><div class="project-index" aria-hidden="true">01<span>2024</span></div><div class="project-copy"><p class="eyebrow">{e(c['projectLabel'])}</p><h3>{lines(c['projectName'])}</h3><p>{e(c['projectText'])}</p><details class="project-details"><summary>{e(c['projectMore'])}</summary><p>{e(c['projectDetail'])}</p></details></div></article></section>
+<section id="project" class="section container">{heading('04',c['nav'][3],c['projectTitle'])}<article class="project-card"><div class="project-index" aria-hidden="true">01<span>2024</span></div><div class="project-copy"><p class="eyebrow">{e(c['projectLabel'])}</p><h3>{lines(c['projectName'])}</h3><p>{e(c['projectText'])}</p><details class="project-details" open><summary>{e(c['projectMore'])}</summary><p>{e(c['projectDetail'])}</p></details></div></article>{evidence_html}</section>
 <section id="education" class="section section-tinted"><div class="container">{heading('05',c['nav'][4],c['educationTitle'])}<div class="education-grid"><div><article class="degree"><p class="eyebrow"><bdi>2020–2024</bdi></p><h3>{e(c['degree'])}</h3><p>{e(c['school'])}</p><p class="grade">{e(c['grade'])}</p><p>{e(c['finalGrade'])}</p></article><div class="languages"><h3>{e(c['languagesLabel'])}</h3><ul>{languages}</ul></div></div><div class="courses"><h3>{e(c['coursesLabel'])}</h3><ul>{courses}</ul></div></div></div></section>
 <section id="contact" class="section container contact">{heading('06',c['nav'][5],c['contactTitle'])}<p>{e(c['contactText'])}</p><a class="email-link" href="mailto:acc.m.zanaty@gmail.com" aria-label="{e(c['emailLabel'])}: acc.m.zanaty@gmail.com"><bdi>acc.m.zanaty@gmail.com</bdi><span aria-hidden="true">↗</span></a><div class="actions professional-links"><a class="button secondary" href="https://www.linkedin.com/in/zanaty-mahmoud-m7z001" target="_blank" rel="noopener noreferrer">{'صفحتي على LinkedIn' if lang == 'ar' else 'My LinkedIn profile'}<span aria-hidden="true">↗</span></a></div><div class="contact-bottom"><p>{e(c['location'])}</p><a class="button secondary print-button" href="./assets/cv/Mahmoud-El-Zanaty-CV-{lang.upper()}.pdf" download="General-Accountant-Mahmoud-El-Zanaty-CV-{lang.upper()}.pdf">{'تحميل السيرة الذاتية PDF' if lang == 'ar' else 'Download CV (PDF)'}<span aria-hidden="true">↓</span></a></div></section>
 </main><footer class="container footer"><p>{e(c['footer'])}</p><a href="#top">{e(c['backTop'])} ↑</a></footer>
