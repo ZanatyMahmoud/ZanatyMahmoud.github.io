@@ -101,7 +101,7 @@
     "projectTitle": "المشاريع",
     "projectLabel": "مشروع التخرج · مشروع أكاديمي",
     "projectName": "دراسة جدوى مصنع\nلألواح الطاقة الشمسية",
-    "projectText": "دراسة جدوى أكاديمية لإنشاء مصنع لتجميع وحدات ألواح الطاقة الشمسية في مصر، تربط متطلبات التشغيل بالتكاليف والتقديرات المالية.",
+    "projectText": "دراسة جدوى أكاديمية لإنشاء مصنع لتجميع وحدات ألواح الطاقة الشمسية في مصر. أعددت الدراسات القانونية والبيئية والفنية والمالية والاقتصادية بالكامل بنفسي؛ الدراسة التسويقية ليست ضمن مساهمتي.",
     "projectMore": "نطاق عملي في المشروع",
     "projectDetail": "أعددت الدراسات القانونية والبيئية والفنية والمالية والاقتصادية بالكامل بنفسي. الدراسة التسويقية ليست ضمن مساهمتي. شمل عملي تحديد احتياجات التشغيل، وتقدير التكاليف الاستثمارية والتشغيلية، وإعداد جداول الإهلاك والتقديرات المالية ودراسة مؤشرات الجدوى. المشروع أكاديمي، ولم أنشئ المصنع أو أتولى تشغيله.",
     "educationTitle": "التعليم",
@@ -148,28 +148,28 @@
     "footer": "محمود أحمد الزناتي · الملف المهني",
     "backTop": "العودة للأعلى",
     "noJs": "المحتوى والتنقل وتبديل اللغة تعمل دون JavaScript. لطباعة الملف استخدم أمر الطباعة في المتصفح.",
-    "projectEvidence": {
-      "title": "مقتطفات من الدراسة",
-      "note": "مقتطفات أصلية باللغة العربية من مشروع التخرج (2024). الأرقام افتراضات وتقديرات أكاديمية بالجنيه المصري، وليست نتائج تشغيل فعلية أو أسعارًا حالية. اضغط على المقتطف لعرضه بحجم أكبر.",
-      "items": [
-        {
-          "title": "هيكل التكاليف الاستثمارية",
-          "caption": "تجميع تكلفة الآلات والمعدات والأصول الأخرى ومصروفات التأسيس. صفحة 56 في الدراسة؛ صفحة 54 في الملف المرفق.",
-          "file": "investment-costs",
-          "alt": "جدول أصلي يلخص التكاليف الاستثمارية المقدرة للمشروع الأكاديمي",
-          "width": 880,
-          "height": 350
-        },
-        {
-          "title": "جدول إهلاك الأصول",
-          "caption": "مقتطف يربط تكلفة الأصل بعمره الإنتاجي وقيمته التخريدية والإهلاك. صفحة 61 في الدراسة؛ صفحة 59 في الملف المرفق.",
-          "file": "asset-depreciation",
-          "alt": "مقتطف أصلي من جدول الإهلاك المحاسبي للأصول في دراسة الجدوى",
-          "width": 1000,
-          "height": 571
-        }
-      ]
-    }
+    "projectSections": [
+      {
+        "title": "الدراسة القانونية ومتطلبات التأسيس",
+        "text": "بحثت الأشكال القانونية للمشروع وإجراءات تأسيس الشركة والتراخيص الصناعية، وجمعت متطلبات الامتثال وقدّرت الرسوم والتكاليف والمدد المرتبطة بالتأسيس، ضمن الإطار الأكاديمي للدراسة."
+      },
+      {
+        "title": "الدراسة البيئية ومتطلبات السلامة",
+        "text": "درست تصنيف النشاط وآثاره البيئية المحتملة، وحددت إجراءات التعامل مع المخلفات والسلامة داخل المصنع. أعددت تقديرات لتكاليف معدات الوقاية والتوافق البيئي، وربطتها باحتياجات المشروع."
+      },
+      {
+        "title": "الدراسة الفنية والتخطيط للتشغيل",
+        "text": "درست الموقع المقترح ومراحل تجميع الألواح، وحددت احتياجات المشروع من الآلات والمعدات والمواد الخام والأثاث ووسائل النقل. تناولت كذلك العمالة المطلوبة وحجم الإنتاج والطاقة الإنتاجية المقترحة."
+      },
+      {
+        "title": "التكاليف والتقديرات المالية",
+        "text": "أعددت تقديرات التكاليف الاستثمارية والتشغيلية، بما يشمل المعدات والتأسيس والإيجار والمرافق والمصروفات الإدارية. نظمت جداول الأصول والإهلاك، وتناولت التمويل والإيرادات المتوقعة، وأعددت قائمة دخل تقديرية لثلاث سنوات."
+      },
+      {
+        "title": "التقييم الاقتصادي ومؤشرات الجدوى",
+        "text": "تناولت فترة الاسترداد والعائد على الاستثمار وصافي القيمة الحالية ومعدل العائد الداخلي، وصغت التوصيات في ضوء افتراضات الدراسة. هذه تحليلات أكاديمية لمشروع مقترح وليست أرباحًا أو نتائج تشغيل حققتها فعليًا."
+      }
+    ]
   },
   "en": {
     "name": "Mahmoud Ahmed El Zanaty",
@@ -273,7 +273,7 @@
     "projectTitle": "Projects",
     "projectLabel": "Graduation project · Academic work",
     "projectName": "Feasibility study:\nsolar panel manufacturing",
-    "projectText": "An academic feasibility study for a solar panel assembly plant in Egypt, linking operating requirements with costs and financial projections.",
+    "projectText": "An academic feasibility study for a solar panel assembly plant in Egypt. I independently prepared the legal, environmental, technical, financial and economic studies; the marketing study was not part of my contribution.",
     "projectMore": "My contribution",
     "projectDetail": "I independently prepared the legal, environmental, technical, financial and economic studies. The marketing study was not part of my contribution. My work covered operating requirements, capital and operating cost estimates, depreciation schedules, financial projections and feasibility indicators. This was an academic project; I did not build or operate the plant.",
     "educationTitle": "My Education",
@@ -320,27 +320,27 @@
     "footer": "Mahmoud Ahmed El Zanaty · Professional profile",
     "backTop": "Back to top",
     "noJs": "Content, navigation and language switching work without JavaScript. Use your browser’s Print command to print this profile.",
-    "projectEvidence": {
-      "title": "Selected study excerpts",
-      "note": "Original Arabic excerpts from the 2024 graduation project. Figures are academic assumptions and estimates in EGP, not actual operating results or current prices. Select an excerpt to view it at a larger size.",
-      "items": [
-        {
-          "title": "Capital cost structure",
-          "caption": "Equipment, other fixed assets and incorporation costs. Study page 56; page 54 in the supplied PDF.",
-          "file": "investment-costs",
-          "alt": "Original Arabic table of estimated capital costs for the academic project",
-          "width": 880,
-          "height": 350
-        },
-        {
-          "title": "Asset depreciation schedule",
-          "caption": "Selected rows linking asset cost, useful life, residual value and depreciation. Study page 61; page 59 in the supplied PDF.",
-          "file": "asset-depreciation",
-          "alt": "Original Arabic excerpt from the academic asset depreciation schedule",
-          "width": 1000,
-          "height": 571
-        }
-      ]
-    }
+    "projectSections": [
+      {
+        "title": "Legal study and establishment requirements",
+        "text": "I researched legal structures, company formation procedures and industrial licensing, compiled compliance requirements, and estimated incorporation fees, costs and timelines within the academic scope of the study."
+      },
+      {
+        "title": "Environmental study and safety requirements",
+        "text": "I examined the activity classification and potential environmental impacts, identified waste-handling and workplace safety measures, and estimated protective equipment and environmental compliance costs in relation to the project's requirements."
+      },
+      {
+        "title": "Technical study and operating plan",
+        "text": "I studied the proposed location and panel assembly stages, identified machinery, equipment, raw materials, furniture and transport requirements, and considered staffing needs, proposed output and production capacity."
+      },
+      {
+        "title": "Cost estimates and financial projections",
+        "text": "I prepared capital and operating cost estimates covering equipment, incorporation, rent, utilities and administrative expenses. I organized asset and depreciation schedules, considered financing and projected revenue, and prepared a three-year projected income statement."
+      },
+      {
+        "title": "Economic appraisal and feasibility indicators",
+        "text": "I addressed payback period, return on investment, net present value and internal rate of return, and developed recommendations based on the study's assumptions. These are academic analyses of a proposed project, not profits or operating results I achieved."
+      }
+    ]
   }
 }
