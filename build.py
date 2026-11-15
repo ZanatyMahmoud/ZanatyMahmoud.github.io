@@ -53,7 +53,7 @@ for lang, c in content.items():
 <section class="hero container" aria-labelledby="hero-title">
 <div class="hero-copy"><p class="eyebrow"><span class="short-rule"></span>{e(c['heroLabel'])}</p><p class="hello">{e(c['hello'])}</p>
 <h1 id="hero-title">{name}</h1><p class="role">{e(c['title'])}</p><p class="direction">{e(c['direction'])}</p><p class="hero-summary">{e(c['summary'])}</p>
-<div class="actions"><a class="button primary" href="#experience">{e(c['experienceCta'])}<span aria-hidden="true">↙</span></a><a class="button secondary" href="#contact">{e(c['contactCta'])}</a></div>
+<div class="actions"><a class="button primary" href="#experience">{e(c['experienceCta'])}<span aria-hidden="true">↙</span></a><a class="button secondary" href="#contact">{e(c['contactCta'])}</a><a class="button secondary print-button hero-cv" href="./assets/cv/Mahmoud-El-Zanaty-CV-{lang.upper()}.pdf" download="General-Accountant-Mahmoud-El-Zanaty-CV-{lang.upper()}.pdf">{'تحميل السيرة الذاتية PDF' if lang == 'ar' else 'Download CV (PDF)'}<span aria-hidden="true">↓</span></a></div>
 <p class="location"><span aria-hidden="true">⌖</span> {e(c['location'])}</p></div>
 <div class="identity-panel portrait-panel"><div class="panel-top"><span dir="ltr">M / Z</span><span>{e(c['heroLabel'])}</span></div><img class="portrait" src="./assets/portrait.svg" width="2032" height="2047" alt="{e(c['name'])}" fetchpriority="high" decoding="async"><div class="panel-bottom"><p>{e(c['monogramCaption'])}</p><span>{e(c['monogramSmall'])}</span></div></div>
 </section>
