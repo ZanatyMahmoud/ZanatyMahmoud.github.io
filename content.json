@@ -12,6 +12,7 @@
       "المهارات",
       "مشاريع",
       "التعليم",
+      "اهتمامات",
       "التواصل"
     ],
     "heroLabel": "المحاسبة والمالية",
@@ -169,6 +170,22 @@
         "title": "التقييم الاقتصادي ومؤشرات الجدوى",
         "text": "تناولت فترة الاسترداد والعائد على الاستثمار وصافي القيمة الحالية ومعدل العائد الداخلي، وصغت التوصيات في ضوء افتراضات الدراسة. هذه تحليلات أكاديمية لمشروع مقترح وليست أرباحًا أو نتائج تشغيل حققتها فعليًا."
       }
+    ],
+    "interestsTitle": "اهتمامات ومشروعات شخصية",
+    "interestsIntro": "مساحات أتعلم وأستكشف فيها خارج المحاسبة والمالية.",
+    "interests": [
+      {
+        "title": "الألعاب وتطويرها",
+        "text": "أحب ألعاب الفيديو والتعديل عليها وصناعة المودات، وأطمح إلى تطوير لعبتي الخاصة. يهمني استكشاف كيفية بناء تجربة اللعب والجمع بين الأفكار الإبداعية والجوانب التقنية."
+      },
+      {
+        "title": "التقنية والمشروعات الشخصية",
+        "text": "أهتم باستكشاف التقنية وتجربة الأدوات الرقمية، وأستمتع بالتعلّم من خلال التجربة وتطوير الأفكار الشخصية وحل المشكلات التي تظهر أثناء العمل عليها."
+      },
+      {
+        "title": "التصميم والمونتاج",
+        "text": "أهتم بالتصميم باستخدام Adobe Photoshop وAdobe Illustrator، إلى جانب تحرير الفيديو والمونتاج. أستمتع باستكشاف طرق التعبير عن الأفكار بصريًا وتطوير معرفتي بأدوات التصميم والفيديو."
+      }
     ]
   },
   "en": {
@@ -184,6 +201,7 @@
       "Skills",
       "Project",
       "Education",
+      "Interests",
       "Contact"
     ],
     "heroLabel": "Accounting & Finance",
@@ -340,6 +358,22 @@
       {
         "title": "Economic appraisal and feasibility indicators",
         "text": "I addressed payback period, return on investment, net present value and internal rate of return, and developed recommendations based on the study's assumptions. These are academic analyses of a proposed project, not profits or operating results I achieved."
+      }
+    ],
+    "interestsTitle": "Interests & Personal Projects",
+    "interestsIntro": "What I enjoy learning and exploring beyond accounting and finance.",
+    "interests": [
+      {
+        "title": "Gaming & Game Development",
+        "text": "I enjoy video games, modifying them and creating mods, and aspire to develop my own game. I am interested in exploring how gameplay experiences are built and how creative ideas come together with technical work."
+      },
+      {
+        "title": "Technology & Personal Projects",
+        "text": "I enjoy exploring technology and trying digital tools. Personal projects give me a way to learn through experimentation, develop ideas and work through the problems I encounter along the way."
+      },
+      {
+        "title": "Design & Video Editing",
+        "text": "I am interested in design with Adobe Photoshop and Adobe Illustrator, as well as video editing. I enjoy exploring ways to express ideas visually and developing my knowledge of design and video tools."
       }
     ]
   }

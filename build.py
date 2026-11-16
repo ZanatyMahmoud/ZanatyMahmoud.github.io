@@ -11,7 +11,7 @@ cv_dir.mkdir(parents=True, exist_ok=True)
 for cv_lang in ('ar', 'en'):
     encoded = (ROOT / 'cv-source' / f'{cv_lang}.pdf.b64').read_text().strip()
     (cv_dir / f'Mahmoud-El-Zanaty-CV-{cv_lang.upper()}.pdf').write_bytes(base64.b64decode(encoded, validate=True))
-ids = ['about', 'experience', 'skills', 'project', 'education', 'contact']
+ids = ['about', 'experience', 'skills', 'project', 'education', 'interests', 'contact']
 def e(value):
     return escape(str(value))
 def lines(value):
@@ -28,6 +28,7 @@ for lang, c in content.items():
     courses = ''.join(f'<li><div><h4>{e(t)}</h4><p>{e(p)}</p></div><time datetime="{y}">{y}</time></li>' for t,p,y in c['courses'])
     languages = ''.join(f'<li>{e(v)}</li>' for v in c['languages'])
     project_sections = ''.join(f'<details class="project-topic"><summary><span>{e(item["title"])}</span></summary><p>{e(item["text"])}</p></details>' for item in c.get('projectSections', []))
+    interest_sections = ''.join(f'<details class="project-topic"><summary><span>{e(item["title"])}</span></summary><p>{e(item["text"])}</p></details>' for item in c['interests'])
     name = 'محمود أحمد<br><span>الزناتي.</span>' if lang == 'ar' else 'Mahmoud Ahmed<br><span>El Zanaty.</span>'
     html = f'''<!doctype html>
 <html lang="{lang}" dir="{'rtl' if lang == 'ar' else 'ltr'}">
@@ -70,7 +71,8 @@ for lang, c in content.items():
 <section id="skills" class="section container">{heading('03',c['nav'][2],c['skillsTitle'])}<div class="skills-grid">{skills}</div></section>
 <section id="project" class="section container">{heading('04',c['nav'][3],c['projectTitle'])}<article class="project-card"><div class="project-index" aria-hidden="true">01<span>2024</span></div><div class="project-copy"><p class="eyebrow">{e(c['projectLabel'])}</p><h3>{lines(c['projectName'])}</h3><p>{e(c['projectText'])}</p><div class="project-topics">{project_sections}</div></div></article></section>
 <section id="education" class="section section-tinted"><div class="container">{heading('05',c['nav'][4],c['educationTitle'])}<div class="education-grid"><div><article class="degree"><p class="eyebrow"><bdi>2020–2024</bdi></p><h3>{e(c['degree'])}</h3><p>{e(c['school'])}</p><p class="grade">{e(c['grade'])}</p><p>{e(c['finalGrade'])}</p></article><div class="languages"><h3>{e(c['languagesLabel'])}</h3><ul>{languages}</ul></div></div><div class="courses"><h3>{e(c['coursesLabel'])}</h3><ul>{courses}</ul></div></div></div></section>
-<section id="contact" class="section container contact">{heading('06',c['nav'][5],c['contactTitle'])}<p>{e(c['contactText'])}</p><a class="email-link" href="mailto:acc.m.zanaty@gmail.com" aria-label="{e(c['emailLabel'])}: acc.m.zanaty@gmail.com"><bdi>acc.m.zanaty@gmail.com</bdi><span aria-hidden="true">↗</span></a><div class="actions professional-links"><a class="button secondary" href="https://www.linkedin.com/in/zanaty-mahmoud-m7z001" target="_blank" rel="noopener noreferrer">{'صفحتي على LinkedIn' if lang == 'ar' else 'My LinkedIn profile'}<span aria-hidden="true">↗</span></a></div><div class="contact-bottom"><p>{e(c['location'])}</p><a class="button secondary print-button" href="./assets/cv/Mahmoud-El-Zanaty-CV-{lang.upper()}.pdf" download="General-Accountant-Mahmoud-El-Zanaty-CV-{lang.upper()}.pdf">{'تحميل السيرة الذاتية PDF' if lang == 'ar' else 'Download CV (PDF)'}<span aria-hidden="true">↓</span></a></div></section>
+<section id="interests" class="section container"><div class="interests-content">{heading('06',c['nav'][5],c['interestsTitle'])}<p>{e(c['interestsIntro'])}</p><div class="project-topics">{interest_sections}</div></div></section>
+<section id="contact" class="section container contact">{heading('07',c['nav'][6],c['contactTitle'])}<p>{e(c['contactText'])}</p><a class="email-link" href="mailto:acc.m.zanaty@gmail.com" aria-label="{e(c['emailLabel'])}: acc.m.zanaty@gmail.com"><bdi>acc.m.zanaty@gmail.com</bdi><span aria-hidden="true">↗</span></a><div class="actions professional-links"><a class="button secondary" href="https://www.linkedin.com/in/zanaty-mahmoud-m7z001" target="_blank" rel="noopener noreferrer">{'صفحتي على LinkedIn' if lang == 'ar' else 'My LinkedIn profile'}<span aria-hidden="true">↗</span></a></div><div class="contact-bottom"><p>{e(c['location'])}</p><a class="button secondary print-button" href="./assets/cv/Mahmoud-El-Zanaty-CV-{lang.upper()}.pdf" download="General-Accountant-Mahmoud-El-Zanaty-CV-{lang.upper()}.pdf">{'تحميل السيرة الذاتية PDF' if lang == 'ar' else 'Download CV (PDF)'}<span aria-hidden="true">↓</span></a></div></section>
 </main><footer class="container footer"><p>{e(c['footer'])}</p><a href="#top">{e(c['backTop'])} ↑</a></footer>
 </body></html>'''
     (ROOT / ('index.html' if lang == 'ar' else 'en.html')).write_text(html, encoding='utf-8')
